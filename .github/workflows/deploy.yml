@@ -19,17 +19,16 @@ jobs:
           environment-url: http://my-app-url.com
           environment: production
           
-      - name: Update deployment status (success)       
+      - name: Update deployment status (success)
+        uses: chrnorm/deployment-action@v2
+        id: deploymentTask
         with:
           task: testTask
           type: typoTask
           deployment-id: ${{ steps.deployment.outputs.deployment_id }}
           state: 'success'
 
-      - name: Deploy my app2
-
-        run: |
-          # add your deployment code here
+      
 
       - name: Update deployment status (success)
         if: success()
