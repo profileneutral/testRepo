@@ -22,7 +22,7 @@ jobs:
       - name: Update deployment status (success)       
         with:
           task: testTask
-          typo: typoTask
+          type: typoTask
           deployment-id: ${{ steps.deployment.outputs.deployment_id }}
           state: 'success'
 
