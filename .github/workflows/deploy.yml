@@ -16,5 +16,5 @@ jobs:
         id: deploymentTask
         with:
           task: testTask
-          type: typoTask
+          
 
