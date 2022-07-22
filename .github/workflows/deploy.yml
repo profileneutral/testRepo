@@ -19,15 +19,13 @@ jobs:
           environment-url: http://my-app-url.com
           environment: production
       - name: Deploy my app
-        task: 
-        type:
+
         run: |
           # add your deployment code here
 
 
-      - name: Deploy my app
-        task: 
-        type:
+      - name: Deploy my app2
+
         run: |
           # add your deployment code here
 
