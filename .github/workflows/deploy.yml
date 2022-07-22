@@ -18,11 +18,13 @@ jobs:
           token: '${{ github.token }}'
           environment-url: http://my-app-url.com
           environment: production
-      - name: Deploy my app
-
-        run: |
-          # add your deployment code here
-
+          
+      - name: Update deployment status (success)       
+        with:
+          task: testTask
+          typo: typoTask
+          deployment-id: ${{ steps.deployment.outputs.deployment_id }}
+          state: 'success'
 
       - name: Deploy my app2
 
