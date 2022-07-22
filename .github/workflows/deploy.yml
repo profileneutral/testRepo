@@ -8,13 +8,14 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    permissions:
+      deployments: write
+
     steps:
       - uses: actions/checkout@v1
-          
-      - name: Update deployment status (success)
-        uses: chrnorm/deployment-action@v2
-        id: deploymentTask
+        name: Create GitHub deployment
+        id: deployment
         with:
-          task: testTask
+          task: taskTest
           
 
