@@ -3,7 +3,7 @@ name: Deploy
 on: [push]
 
 jobs:
-  deploy:
+  deploy2:
     name: Deploy my app
 
     runs-on: ubuntu-latest
